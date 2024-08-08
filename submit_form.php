@@ -17,14 +17,14 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Mendapatkan data dari formulir
-    $id = htmlspecialchars($_POST['id']);
+    // $id = htmlspecialchars($_POST['id']);
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
     // Menyiapkan dan mengeksekusi pernyataan SQL
     $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $name, $email, $message);
+    $stmt->bind_param("aaa", $name, $email, $message);
 
     if ($stmt->execute()) {
         echo "<p>Terima kasih! Pesan Anda telah tersimpan.</p>";
