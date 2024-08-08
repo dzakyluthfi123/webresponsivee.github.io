@@ -88,50 +88,24 @@ include 'header.php';
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
 
-    <!-- <form action="#">
+    <form id="contactForm">
         <div class="input-box">
-            <label for="name">NAMA</label>
+
             <input type="text" placeholder="Full Name" id="name" name="name" required>
             <input type="email" placeholder="Email" id="email" name="email" required>
         </div>
         <div class="input-box">
-             <input type="number" placeholder="Phone Number"> -->
-    <!-- <input type="text" placeholder="Subject"> -->
-    <!-- </div>
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="text" inputmode="numeric" placeholder="Phone Number" id="phone" name="phone">
+            <input type="text" placeholder="Subject" id="subject" name="subject">
+        </div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
 
-    <input type="submit" value="Send Message" class="btn">
+        <input type="submit" value="Send Message" class="btn">
     </form>
-    <div id="formMessage" class="notification"></div> -->
+    <div id="formMessage" class="notification"></div>
+</section>
 
 
-    <div class="container">
-        <form method="POST" action="process.php">
-            <div class="form-group">
-                <label for="firstname">Firstname</label>
-                <input type="text" name="firstname" id="firstname" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="lastname">Lastname</label>
-                <input type="text" name="lastname" id="lastname" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">phone</label>
-                <input type="text" name="phone" id="phone" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="email" name="email" id="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="message">message</label>
-                <input type="text" name="message" id="message" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <button type="submit" value="Send Message" class="btn btn-success"></button>
-            </div>
-        </form>
-    </div>
 </section>
 
 

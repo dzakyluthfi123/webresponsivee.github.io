@@ -526,3 +526,40 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
 }
+/* CSS Notifikasi */
+.notification {
+    display: none; /* Sembunyikan notifikasi secara default */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.notification.success {
+    background-color: #04fffb; /* Warna latar belakang baru */
+    color: #003c3c; /* Warna teks yang kontras */
+    border: 1px solid #04fffb; /* Border sesuai warna latar belakang */
+}
+
+.notification.error {
+    background-color: #f8d7da; /* Warna latar belakang untuk error */
+    color: #721c24; /* Warna teks untuk error */
+    border: 1px solid #f5c6cb; /* Border untuk error */
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+    display: none; /* Sembunyikan notifikasi setelah animasi selesai */
+}
+

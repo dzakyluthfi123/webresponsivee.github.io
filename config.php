@@ -1,7 +1,14 @@
 <?php
-define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASSWORD", "");
-define("DB_DATABASE", "contact-data");
+// Detail koneksi database
+$servername = "localhost"; // Ganti dengan hostname server Anda jika perlu
+$username = "root";        // Ganti dengan username database Anda
+$password = "";            // Ganti dengan password database Anda
+$dbname = "contact_formdb";    // Nama database yang baru
 
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
+// Membuat koneksi
+$mysqli = new mysqli($servername, $username, $password, $dbname);
+
+// Mengecek koneksi
+if ($mysqli->connect_error) {
+    die("Koneksi gagal: " . $mysqli->connect_error);
+}
