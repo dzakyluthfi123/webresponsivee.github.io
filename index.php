@@ -90,17 +90,19 @@ include 'header.php';
 
     <form action="#">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+            <label for="name">NAMA</label>
+            <input type="text" placeholder="Full Name" id="name" name="name" required>
+            <input type="email" placeholder="Email" id="email" name="email" required>
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
+            <!-- <input type="number" placeholder="Phone Number"> -->
+            <!-- <input type="text" placeholder="Subject"> -->
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
 
         <input type="submit" value="Send Message" class="btn">
     </form>
+    <div id="formMessage" class="notification"></div>
 </section>
 
 
