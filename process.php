@@ -2,7 +2,7 @@
 include("config.php");
 
 extract($_POST);
-$query = "INSERT INTO 'contact-data' ('firstname','lastname','phone','email','messages') VALUES ('" . $firstname . "','" . $lastname . "','" . $phone . "','" . $email . "','" . $message . "')";
+$query = "INSERT INTO 'contact-data' ('firstname','lastname','phone','email','messages') VALUES ('" . $firstname . "','" . $lastname . "','" . $phone . "','" . $email . "','" . $messages . "')";
 
 $result = $mysqli->query($query);
 
