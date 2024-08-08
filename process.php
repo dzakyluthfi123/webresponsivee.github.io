@@ -7,7 +7,7 @@ $query = "INSERT INTO 'contact-data' ('firstname','lastname','phone','email','me
 $result = $mysqli->query($query);
 
 if (!$result) {
-    echo "something went wrong" . $mysli->err;
+    echo "something went wrong" . $mysqli->error;
 }
 
 echo "thanks you for sumitt your query";
