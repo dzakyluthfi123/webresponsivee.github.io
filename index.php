@@ -3,7 +3,7 @@ include 'header.php';
 ?>
 <section class="home" id="home">
     <div class="home-img">
-        <img src="FOTO_SAYA-Copy1.jpg" alt="">
+        <img src="assets/FOTO_SAYA-Copy1.jpg" alt="">
     </div>
 
     <div class="home-content">
@@ -38,7 +38,7 @@ include 'header.php';
         <a href="#" class="btn">Read More</a>
     </div>
     <div class="about-img">
-        <img src="FOTO_SAYA-Copy1.jpg" alt="">
+        <img src="assets/FOTO_SAYA-Copy1.jpg" alt="">
     </div>
 </section>
 
