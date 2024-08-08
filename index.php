@@ -124,7 +124,7 @@ include 'header.php';
                 <input type="email" name="email" id="email" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="message">Firstname</label>
+                <label for="message">message</label>
                 <input type="text" name="message" id="message" class="form-control" required>
             </div>
             <div class="form-group">
