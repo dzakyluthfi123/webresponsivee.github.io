@@ -18,10 +18,11 @@ include 'header.php';
             quaerat incidunt excepturi. Repellat nobis sunt voluptas nam nulla.</p>
 
         <div class="social-icons">
-            <a href="https://www.instagram.com/m45j4i/"><i class="bi bi-instagram"></i>
-                <a href="#"><i class="bi bi-whatsapp"></i>
-                    <a href="https://www.facebook.com/profile.php?id=100050076496327"><i class="bi bi-facebook"></i>
+            <a href="https://www.instagram.com/m45j4i/"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100050076496327"><i class="bi bi-facebook"></i></a>
         </div>
+
 
         <a href="#" class="btn">Hire Me</a>
     </div>
